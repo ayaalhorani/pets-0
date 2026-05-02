@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>تم الطلب بنجاح</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Arabic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            font-family: 'Tajawal', sans-serif;
+            direction: rtl;
+        }
+
+        .success-box {
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding: 35px 25px;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .success-icon {
+            font-size: 50px;
+            color: #28a745;
+            background-color: #eafaf1;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.2);
+        }
+
+        @media (min-width: 768px) {
+            .success-icon {
+                font-size: 60px;
+                width: 110px;
+                height: 110px;
+            }
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+
+
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .warning1 {
+
+            background-color: #e66a25;
+            color: #fff;
+
+        }
+
+        .warning1:hover {
+
+            border: 1px solid #e66a25;
+            color: #e66a25 !important;
+        }
+
+        .btn-dashboard {
+
+
+            border: 1px solid #e66a25;
+            color: #e66a25;
+        }
+
+        .btn-dashboard:hover {
+            background-color: #e66a25;
+            color: #fff;
+        }
+
+        .breadcrumb {
+            background: transparent;
+            font-size: 14px;
+        }
+
+        .breadcrumb-item::before {
+            content: " ";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3 mt-md-4">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item mr-2 ">
+                    <a href="#" class="text-muted text-decoration-none">الرئيسية</a> /
+                </li>
+                <li class="breadcrumb-item mr-2">
+                    <a href="#" class="text-muted text-decoration-none">سلة التسوق</a>
+                </li>
+                <li class="breadcrumb-item active text-primary">الدفع</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+        <div class="success-box animate__animated animate__fadeInUp">
+            <div class="success-icon">
+                <i class="bi bi-check-lg"></i>
+            </div>
+            <h4 class="fw-bold"> تم تأكيد طلبك بنجاح!</h4>
+            <p class="fw-bold text-success mt-2">رقم الطلب: #12345</p>
+            <p class="text-muted small px-md-3">
+                تم استلام طلبك وسيتم معالجته في أقرب وقت ممكن.
+                يمكنك متابعة حالة الطلب من لوحة التحكم الخاصة بك.
+            </p>
+            <div class="progress mt-3" style="height:6px;">
+                <div class="progress-bar bg-success" style="width:100%"></div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center mt-4">
+                <a href="#" class="btn btn-dashboard w-100 w-sm-auto">
+                    <i class="bi bi-speedometer2 ms-1"></i>
+                    لوحة التحكم
+                </a>
+                <a href="#" class="btn warning1 text-white w-100 w-sm-auto">
+                    عرض الطلب <i class="bi bi-arrow-left ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
